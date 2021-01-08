@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   name = 'Captain America';
   name2 = 'JuAn ViCenTe VAZQuez';
+  videoUrl = 'https://www.youtube.com/embed/RFczJEfpoEc';
   Array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   PI: number = Math.PI;
   percentage = 0.234;
