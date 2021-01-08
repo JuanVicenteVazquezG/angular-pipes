@@ -37,6 +37,7 @@
                     <td> slice:0:3 (Just leave the first three letters) </td>
                     <td>{{ name | slice:0:3 }}</td>
                 </tr>
+
                 <tr>
                     <td>{{ Array }}</td>
                     <td> slice:1:5 (Can be used with Array of numbers)</td>
@@ -106,6 +107,13 @@
                     <button (click)="setLanguage('fr')" class="ml-1 btn btn-secondary">French</button>
                     <button (click)="setLanguage('en')" class="ml-1 btn btn-success">English</button>
                     <td>{{ date | date: 'dd - MMMM - yyyy':'':language }}</td>
+                </tr>
+
+                <tr>
+                    <td>{{ name }}</td>
+                    <td> password (Customize Pipe) {{active}}</td>
+                    <td>{{ name | password: active}}</td>
+                    <button (click)="active=!active" class="btn btn-primary">enable/disable</button>
                 </tr>
 
         </table>

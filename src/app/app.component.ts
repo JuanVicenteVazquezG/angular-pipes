@@ -13,6 +13,8 @@ export class AppComponent {
   percentage = 0.234;
   salary = 1234.5;
 
+  active = true;
+
   hero = {
     name: 'Logan',
     key: 'Wolverine',
