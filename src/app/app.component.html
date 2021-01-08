@@ -47,6 +47,16 @@
                     <td> number with only 2 decimals (number:'.0-2')</td>
                     <td>{{ PI | number:'.0-2'}}</td>
                 </tr>
+                <tr>
+                    <td>{{ percentage }}</td>
+                    <td> percent </td>
+                    <td>{{ percentage | percent }}</td>
+                </tr>
+                <tr>
+                    <td>{{ percentage }}</td>
+                    <td> percent:'2.2-2' (percent pipe with two decimals)</td>
+                    <td>{{ percentage | percent:'2.2-2' }}</td>
+                </tr>
         </table>
     </div>
 </div>
