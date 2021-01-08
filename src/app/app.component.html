@@ -12,10 +12,16 @@
             </thead>
             <tbody>
                 <tr>
+                    <td>{{ name2 }}</td>
+                    <td> capitalize (Customized Pipe) </td>
+                    <td>{{ name2 |capitalize}}</td>
+                </tr>
+                <tr>
                     <td>{{ name }}</td>
                     <td> uppercase </td>
                     <td>{{ name | uppercase}}</td>
                 </tr>
+
                 <tr>
                     <td>{{ name }}</td>
                     <td> lowercase </td>
@@ -96,9 +102,9 @@
                     <td>{{ date }}</td>
                     <td> date: 'dd - MMMM - yyyy':'':'{{language}}' </td>
                     <br>
-                    <button (click)="setLanguage('es')" class="mr-1 btn btn-primary">Spanish</button>
-                    <button (click)="setLanguage('fr')" class="mr-1 btn btn-secondary">French</button>
-                    <button (click)="setLanguage('en')" class="mr-1 btn btn-success">English</button>
+                    <button (click)="setLanguage('es')" class="ml-1 btn btn-primary">Spanish</button>
+                    <button (click)="setLanguage('fr')" class="ml-1 btn btn-secondary">French</button>
+                    <button (click)="setLanguage('en')" class="ml-1 btn btn-success">English</button>
                     <td>{{ date | date: 'dd - MMMM - yyyy':'':language }}</td>
                 </tr>
 
@@ -112,3 +118,4 @@
         </div>
     </div>
 </div>
+<h3 class="mt-4">secureDom (Customized Pipe)</h3>
