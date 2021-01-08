@@ -72,6 +72,35 @@
                     <td> async </td>
                     <td>{{ promiseValue | async }}</td>
                 </tr>
+                <tr>
+                    <td>{{ date }}</td>
+                    <td> date </td>
+                    <td>{{ date | date }}</td>
+                </tr>
+                <tr>
+                    <td>{{ date }}</td>
+                    <td> date: 'medium' </td>
+                    <td>{{ date | date: 'medium' }}</td>
+                </tr>
+                <tr>
+                    <td>{{ date }}</td>
+                    <td> date: 'short' </td>
+                    <td>{{ date | date: 'short' }}</td>
+                </tr>
+                <tr>
+                    <td>{{ date }}</td>
+                    <td> date: 'dd - MMMM - yyyy' </td>
+                    <td>{{ date | date: 'dd - MMMM - yyyy':'':'fr' }}</td>
+                </tr>
+                <tr>
+                    <td>{{ date }}</td>
+                    <td> date: 'dd - MMMM - yyyy':'':'{{language}}' </td>
+                    <br>
+                    <button (click)="setLanguage('es')" class="mr-1 btn btn-primary">Spanish</button>
+                    <button (click)="setLanguage('fr')" class="mr-1 btn btn-secondary">French</button>
+                    <button (click)="setLanguage('en')" class="mr-1 btn btn-success">English</button>
+                    <td>{{ date | date: 'dd - MMMM - yyyy':'':language }}</td>
+                </tr>
 
         </table>
         <h3>JSON pipe</h3>

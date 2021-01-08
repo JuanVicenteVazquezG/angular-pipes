@@ -26,4 +26,9 @@ export class AppComponent {
       resolve('Data has arrived!');
     }, 4500);
   });
+
+  date = new Date();
+
+  public language = 'es';
+  setLanguage = (lang) => (this.language = lang);
 }
