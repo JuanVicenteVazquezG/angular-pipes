@@ -21,7 +21,28 @@
                     <td> lowercase </td>
                     <td>{{ name | lowercase}}</td>
                 </tr>
+                <tr>
+                    <td>{{ name }}</td>
+                    <td> slice:3 (Cut the first three letters) </td>
+                    <td>{{ name | slice:3 }}</td>
+                </tr>
+                <tr>
+                    <td>{{ name }}</td>
+                    <td> slice:0:3 (Just leave the first three letters) </td>
+                    <td>{{ name | slice:0:3 }}</td>
+                </tr>
+                <tr>
+                    <td>{{ Array }}</td>
+                    <td> slice:1:5 (Can be used with Array of numbers)</td>
+                    <td>{{ Array | slice:1:5 }}</td>
+                </tr>
             </tbody>
         </table>
+
+        <h4>Slice Pipe applied to an array in a * ngFor structural directive</h4>
+        <h4>Array content: {{ Array }}</h4>
+        <ul>
+            <li *ngFor="let item of Array | slice:5:20">{{item}}</li>
+        </ul>
     </div>
 </div>
