@@ -57,6 +57,24 @@
                     <td> percent:'2.2-2' (percent pipe with two decimals)</td>
                     <td>{{ percentage | percent:'2.2-2' }}</td>
                 </tr>
+                <tr>
+                    <td>{{ salary }}</td>
+                    <td> currency (without settings)</td>
+                    <td>{{ salary | currency }}</td>
+                </tr>
+                <tr>
+                    <td>{{ salary }}</td>
+                    <td> currency:'EUR' (Europe settings)</td>
+                    <td>{{ salary | currency:'EUR' }}</td>
+                </tr>
+
         </table>
+        <h3>JSON pipe</h3>
+        <hr>
+        <div class="row mb-5">
+            <div class="col">
+                {{hero | json}}
+            </div>
+        </div>
     </div>
 </div>
