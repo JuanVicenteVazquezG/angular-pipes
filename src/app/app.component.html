@@ -36,13 +36,17 @@
                     <td> slice:1:5 (Can be used with Array of numbers)</td>
                     <td>{{ Array | slice:1:5 }}</td>
                 </tr>
-            </tbody>
-        </table>
 
-        <h4>Slice Pipe applied to an array in a * ngFor structural directive</h4>
-        <h4>Array content: {{ Array }}</h4>
-        <ul>
-            <li *ngFor="let item of Array | slice:5:20">{{item}}</li>
-        </ul>
+                <tr>
+                    <td>{{ PI }}</td>
+                    <td> number </td>
+                    <td>{{ PI | number}}</td>
+                </tr>
+                <tr>
+                    <td>{{ PI }}</td>
+                    <td> number with only 2 decimals (number:'.0-2')</td>
+                    <td>{{ PI | number:'.0-2'}}</td>
+                </tr>
+        </table>
     </div>
 </div>
