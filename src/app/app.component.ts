@@ -20,4 +20,10 @@ export class AppComponent {
       house: 20,
     },
   };
+
+  promiseValue = new Promise<string>((resolve) => {
+    setTimeout(() => {
+      resolve('Data has arrived!');
+    }, 4500);
+  });
 }
